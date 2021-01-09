@@ -41,8 +41,8 @@ def sort_by_surname(data):
 def sort_by_date(data):
     return data.get('years')
 
-data_sorted = sorted(data, key=sort_by_date)
-print(data_sorted)
+    data_sorted = sorted(data, key=sort_by_date)
+    return data_sorted
 
 #################################################################
 
@@ -50,7 +50,8 @@ print(data_sorted)
 
 def sort_by_number_of_words(data):
     texts = []
-for text in texts:
+    for text in texts:
     text_split = text.split()
     texts.append(text_split)
-sorted_texts = (sorted(texts, key=len))
+    sorted_texts = (sorted(texts, key=len))
+    return sorted_texts
